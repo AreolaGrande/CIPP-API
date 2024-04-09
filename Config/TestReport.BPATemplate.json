@@ -1,0 +1,22 @@
+{
+  "name": "TestReport",
+  "style": "Table",
+  "Fields": [
+    {
+      "name": "Security Defaults enabled?",
+      "UseExistingInfo": false,
+      "FrontendFields": [
+        {
+          "name": "SecurityDefaults",
+          "value": "IsEnabled"
+        }
+      ],
+      "StoreAs": "string",
+      "API": "Graph",
+      "ExtractFields": [
+        "isEnabled"
+      ],
+      "URL": "https://graph.microsoft.com/policies/identitySecurityDefaultsEnforcementPolicy"
+    }
+  ]
+}
